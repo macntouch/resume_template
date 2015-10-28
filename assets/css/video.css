@@ -1,0 +1,28 @@
+body, html {
+    height: 100%;
+}
+
+.video-background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 0;
+}
+
+.video-background div {
+    position: relative;
+    z-index: 1;
+}

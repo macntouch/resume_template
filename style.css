@@ -1,0 +1,305 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700,700italic);
+
+html, body {
+    height: 100%;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none !important;
+    color: #FFFFFF;
+}
+
+h1, h2{
+    font-weight: 700;
+}
+
+.main {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.main div {
+    flex-grow: 1;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+}
+
+.profile-image {
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;
+}
+
+.main div h1 {
+    font-size: 55px;
+}
+
+.main div h2 {
+    font-size: 35px;
+    padding-top: 12px;
+}
+
+.social-list {
+    margin-top: 25px;
+    height: 70px;
+}
+
+.social-list i {
+    padding-left: 15px;
+}
+
+.fa-twitter:hover {
+    font-size: 4em;
+    color: #0081B0;
+}
+
+.fa-linkedin:hover {
+    font-size: 4em;
+    color: #1482BA;
+}
+
+.fa-google-plus:hover {
+    font-size: 4em;
+    color: #C04438;
+}
+
+.fa-codepen:hover {
+    font-size: 4em;
+}
+
+.fa-github:hover {
+    font-size: 4em;
+    color: #000000;
+}
+
+/**
+ * About
+ */
+.about {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(assets/images/bg_about.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0!important;
+}
+
+.about div {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*align-items: center;*/
+    padding-top: 50px;
+}
+
+.about-title {
+
+}
+
+.about-title h1 {
+    font-size: 45px;
+    padding-top: 20px;
+}
+
+.about-description {
+    max-width: 50%;
+}
+
+.about-description h2 {
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+.description {
+    font-size: 18px;
+}
+
+.skills {
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.skillbar {
+  font-family: 'Open Sans', 'sans-serif';
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:13px;
+	color:#fff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#444;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+/*
+ * Jobs
+ */
+.jobs {
+    color: #000000;
+    margin: 0!important;
+}
+
+.jobs-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.jobs-title h1 {
+    font-size: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.jobs div {
+    flex-grow: 0;
+    text-align: center;
+}
+
+
+.job {
+    flex-grow: 1;
+    text-align: center;
+    width: 600px;
+    margin: 20px;
+    /*padding-top: 20px;
+    padding-left: 30px;*/
+    padding-right: 60px;
+    margin-left: 6%;
+}
+
+.job-title {
+    padding-bottom: 25px;
+}
+
+.job-title h2 {
+    font-size: 20px;
+}
+
+.job-title h2 small {
+    font-size: 18px;
+}
+
+.job-description {
+    text-align: justify!important;
+    padding-left: 30px;
+    padding-right: 15px;
+    max-height: 160px;
+}
+
+.button {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 15px 45px;
+    font-size: 48px;
+    font-family: "Bitter",serif;
+    line-height: 1.8;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.button:focus {
+    outline: none
+}
+
+.more {
+    position: relative;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 100%;
+    height: 40px;
+}
+
+.more a {
+    float: right;
+}
